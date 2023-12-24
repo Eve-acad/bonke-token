@@ -118,9 +118,3 @@ body {
     }
   }
   
-  @media (min-width: 1800px) {
-    body {
-      font-size: 13px; /* Maximum font size for large screens */
-    }
-  }
-  

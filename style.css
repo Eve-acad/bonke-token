@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Patrick Hand SC', cursive;
-    background-color: #ffadf0; /* Pink background */
+    background-color: #9FEBFF; /* Pink background */
     font-size: 18px; /* Default text size */
     font-weight: bolder; /* Bold font weight */
   }
@@ -26,7 +26,7 @@ body {
   
   .content {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     padding: 20px;
   }
@@ -34,6 +34,7 @@ body {
   .mascot img {
     max-width: 100%;
     height: auto;
+    align-items: center;
   }
   
   .text-content {
@@ -65,6 +66,17 @@ body {
     text-align: center;
     padding: 20px;
   }
+
+  .social-button {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333; /* Initial color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .social-button:hover {
+    color: #007ea1; /* Color on hover */
+  }  
   
   .social-button {
     font-size: 24px;
@@ -76,10 +88,24 @@ body {
   @media (max-width: 768px) {
     .content {
       flex-direction: column;
+      align-items: center; /* Centers the flex container's children */
+      padding: 20px 0; /* Adds padding on the top and bottom */
+    }
+  
+    .mascot {
+      width: 100%; /* Ensures the mascot container spans the full width */
+      display: flex;
+      justify-content: center; /* Centers the mascot image */
     }
   
     .mascot img {
-      max-width: 80%; /* Adjust mascot size on smaller screens */
+      max-width: 80%; /* Adjust the size of the mascot image as needed */
+      height: auto;
+      margin-bottom: 20px; /* Adjusts the gap between the mascot and the text */
+    }
+  
+    .text-content {
+      width: 100%; /* Ensures the text content container spans the full width */
     }
   
     .buy-button,
@@ -88,13 +114,13 @@ body {
     }
     
     body {
-      font-size: 15px; /* Minimum font size for small screens */
+      font-size: 13px; /* Minimum font size for small screens */
     }
   }
   
   @media (min-width: 1800px) {
     body {
-      font-size: 22px; /* Maximum font size for large screens */
+      font-size: 13px; /* Maximum font size for large screens */
     }
   }
   
